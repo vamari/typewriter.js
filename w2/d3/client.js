@@ -12,6 +12,13 @@ const connect = function () {
     console.log("Connected");// code that does something when the connection is first established
   });
   return conn;
+
+
+
+  conn.on('connect', () => {
+  conn.write('Name: ABC');
+  });
+
 };
 
 console.log("Connecting ...");

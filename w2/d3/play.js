@@ -1,4 +1,4 @@
-const net = require("net");
+// const net = require("net");
 
 // establishes a connection with the game server
 // const connect = function () {
@@ -18,7 +18,8 @@ const net = require("net");
 // console.log("Connecting ...");
 // connect();
 // const { host, port} = require("./client.js");
-const { connect } = require("./client.js");
+
+const { connect } = require("./client");
 
 
 
