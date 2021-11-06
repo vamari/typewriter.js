@@ -11,13 +11,25 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Connected");// code that does something when the connection is first established
   });
-  return conn;
 
 
 
   conn.on('connect', () => {
   conn.write('Name: ABC');
+  conn.write('Move: up');
+  setInterval(() => {
+    conn.write('Move: left')
+  }, 3000);
+  setTimeout(() => {
+    conn.write('Move: down')
+  }, 5000)
+
   });
+
+  
+    
+    
+    return conn;
 
 };
 
